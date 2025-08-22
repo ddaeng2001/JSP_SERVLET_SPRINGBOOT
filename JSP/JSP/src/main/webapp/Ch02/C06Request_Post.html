@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="">
+				 <!-- form에 입력한 후 전달하는 파일 위치 -->
+	<h1>컴퓨터 Form_Form_Post_with_Dto(+ActionTag)</h1>
+	<form action="./C06Request_Process.jsp" method="post">
+		이름 : <input type="text" name="username"/><br/>
+		나이 : <input type="text" name="age"/><br/>
+		날짜 : <input type="datetime-Local" name="date"/><br/>
+		<input type="submit" name="서버로 전송"/><br/>	
+	</form>
+	
+	<!-- FN에서 데이터는 전부 String으로 전달됨 
+		 이 String이 BN로 전달하는 과정에서 WebDataBinder이 String은 String으로 숫자는 int로 바인딩해주나
+		 날짜정보 등은 형변환을 못해주기 때문에 직접 건드려야함
+		 jsp파일은 servlet에서 이용하는 클래스	
+	 -->
+</body>
+</html>
