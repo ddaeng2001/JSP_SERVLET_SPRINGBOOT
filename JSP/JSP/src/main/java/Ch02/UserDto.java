@@ -2,10 +2,10 @@ package Ch02;
 
 public class UserDto {
 	private String userid;
-	private int password;
+	private String password;
 	private int rePassword;
 	private String username;
-	private int zipcode;
+	private String zipcode;
 	private String addr1;
 	private String addr2;
 	private int phone1;
@@ -23,7 +23,7 @@ public class UserDto {
 	public UserDto(){} //public을 지정해야 action사용가능
 
 	//모든 인자 생성자
-	public UserDto(String userid, int password, int rePassword, String username, int zipcode, String addr1,
+	public UserDto(String userid, String password, int rePassword, String username, String zipcode, String addr1,
 			String addr2, int phone1, int phone2, int phone3, int tel1, int tel2, int tel3, String email, String year,
 			String month, String day) {
 		super();
@@ -56,11 +56,11 @@ public class UserDto {
 		this.userid = userid;
 	}
 
-	public int getPassword() {
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPassword(int password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 
@@ -80,11 +80,11 @@ public class UserDto {
 		this.username = username;
 	}
 
-	public int getZipcode() {
+	public String getZipcode() {
 		return zipcode;
 	}
 
-	public void setZipcode(int zipcode) {
+	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
 	}
 
