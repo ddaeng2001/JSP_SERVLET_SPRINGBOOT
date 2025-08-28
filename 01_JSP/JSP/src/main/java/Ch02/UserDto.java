@@ -1,0 +1,211 @@
+package Ch02;
+
+public class UserDto {
+	private String userid;
+	private String password;
+	private int rePassword;
+	private String username;
+	private String zipcode;
+	private String addr1;
+	private String addr2;
+	private int phone1;
+	private int phone2;
+	private int phone3;
+	private int tel1;
+	private int tel2;
+	private int tel3;
+	private String email;
+	private String year;
+	private String month;
+	private String day;
+	
+	//디폴트 생성자
+	public UserDto(){} //public을 지정해야 action사용가능
+
+	//모든 인자 생성자
+	public UserDto(String userid, String password, int rePassword, String username, String zipcode, String addr1,
+			String addr2, int phone1, int phone2, int phone3, int tel1, int tel2, int tel3, String email, String year,
+			String month, String day) {
+		super();
+		this.userid = userid;
+		this.password = password;
+		this.rePassword = rePassword;
+		this.username = username;
+		this.zipcode = zipcode;
+		this.addr1 = addr1;
+		this.addr2 = addr2;
+		this.phone1 = phone1;
+		this.phone2 = phone2;
+		this.phone3 = phone3;
+		this.tel1 = tel1;
+		this.tel2 = tel2;
+		this.tel3 = tel3;
+		this.email = email;
+		this.year = year;
+		this.month = month;
+		this.day = day;
+	}
+
+	
+	//getter and setter
+	public String getUserid() {
+		return userid;
+	}
+
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public int getRePassword() {
+		return rePassword;
+	}
+
+	public void setRePassword(int rePassword) {
+		this.rePassword = rePassword;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getZipcode() {
+		return zipcode;
+	}
+
+	public void setZipcode(String zipcode) {
+		this.zipcode = zipcode;
+	}
+
+	public String getAddr1() {
+		return addr1;
+	}
+
+	public void setAddr1(String addr1) {
+		this.addr1 = addr1;
+	}
+
+	public String getAddr2() {
+		return addr2;
+	}
+
+	public void setAddr2(String addr2) {
+		this.addr2 = addr2;
+	}
+
+	public int getPhone1() {
+		return phone1;
+	}
+
+	public void setPhone1(int phone1) {
+		this.phone1 = phone1;
+	}
+
+	public int getPhone2() {
+		return phone2;
+	}
+
+	public void setPhone2(int phone2) {
+		this.phone2 = phone2;
+	}
+
+	public int getPhone3() {
+		return phone3;
+	}
+
+	public void setPhone3(int phone3) {
+		this.phone3 = phone3;
+	}
+
+	public int getTel1() {
+		return tel1;
+	}
+
+	public void setTel1(int tel1) {
+		this.tel1 = tel1;
+	}
+
+	public int getTel2() {
+		return tel2;
+	}
+
+	public void setTel2(int tel2) {
+		this.tel2 = tel2;
+	}
+
+	public int getTel3() {
+		return tel3;
+	}
+
+	public void setTel3(int tel3) {
+		this.tel3 = tel3;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getYear() {
+		return year;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
+	public String getMonth() {
+		return month;
+	}
+
+	public void setMonth(String month) {
+		this.month = month;
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+
+	
+	//toString()
+	@Override
+	public String toString() {
+		return "UserDto [userid=" + userid + ", password=" + password + ", rePassword=" + rePassword + ", username="
+				+ username + ", zipcode=" + zipcode + ", addr1=" + addr1 + ", addr2=" + addr2 + ", phone1=" + phone1
+				+ ", phone2=" + phone2 + ", phone3=" + phone3 + ", tel1=" + tel1 + ", tel2=" + tel2 + ", tel3=" + tel3
+				+ ", email=" + email + ", year=" + year + ", month=" + month + ", day=" + day + "]";
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

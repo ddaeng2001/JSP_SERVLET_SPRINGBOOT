@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>02_SERVLET_INIT</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.xhtml</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.xhtml</welcome-file>
+  </welcome-file-list>
+  
+  <!--  전역 경로 설정 -->
+  <servlet>
+  	<servlet-name>C02Servlet</servlet-name> <!-- web.xml내에서 쓰기 위한 용도  -->
+  	<servlet-class>Servlet.C02Servlet_Test</servlet-class>		<!-- 실제 C02Servlet_Test파일 경로 -->
+  </servlet>
+  <servlet-mapping><!--특정 uri로 servlet을 매핑할 때 사용됨  -->
+  	<servlet-name>C02Servlet</servlet-name>
+  	<url-pattern>/TEST_02</url-pattern>
+  </servlet-mapping>
+  
+  	<!--URI 요청을 특정 Servlet으로 매핑하기 위해서이며
+  	톰캣은 이 web.xml 파일을 읽어서 해당 URI 요청이 어떤 서블릿에 의해 처리되어야 하는지를 결정 -->
+  	
+</web-app>
