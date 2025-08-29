@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+
+    <WatchedResource>WEB-INF/web.xml</WatchedResource> <!-- 자원경로 탐색 시 위치 참고-->
+    <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+    
+    <!-- CONNECTION POOL SETTING(DataSource)  -->
+    		  <!-- //메모리 공간에 어떤 공간을 쓸 건지 메모리 적재 -->			
+    <Resource driverClassName="com.mysql.cj.jdbc.Driver"  
+  			  url="jdbc:mysql://Localhost/opendatadb"
+  			  username="root"
+  			  password="1234"
+  			  name="jdbc/MySqlDB" 
+  			  type="javax.sql.DataSource"
+  			  auth="Container"
+  			  maxActive="10"
+  			  maxIdle="2"
+  			  maxWait="5000" /> 
+</Context>
+
+<!--name: 리소스를 찾기 위한 이름  -->
+<!-- 
+type : 커넥션 풀 클래스 == DataSource
+auth="Container" : 톰캣 내에서 자원들을 관리하겠다!
+maxActive : 커넥션의 최대 개수를 몇 개까지 지원하겠다
+maxIdle : 일을 하지 않는(여유) 커넥션은 최대 몇 개? , 급하면 쓰긴 쓸 것
+maxWait: 기다리는 값(Time out값) -->
+
+<!--  이걸 전역화시켜서 전체 Servlet에 적용할 수 있도록 띄울려면 web.xml 작업--> 
