@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServlet;
 				 //도메인 경로 - http://localhost:8090/02_SERVLET_INIT/ - 현재위치
 				 //전체 도메인 경로 http://localhost:8090/02_SERVLET_INIT/TEST_01
 
+//Annotation 대신 web.xml을 만들어서 servlet 경로를 등록후 servlet에 관한 엔드포인트 지정해서 따로 관리도 가능
+//web.xml-> 전역 설정으로 처음 동작시 사용됨
+
 public class C02Servlet_Test extends HttpServlet{
 	
 	//Servlet의 웹 처리를 보기 위해 생명주기 함수들을 볼 예정

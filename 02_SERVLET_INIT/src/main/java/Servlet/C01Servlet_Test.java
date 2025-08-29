@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 //request 요청 - 서블릿 파일 매핑(요청 처리를 할 uri 지정/설정) - 요청 처리 - 결과반환(웹페이지)
 
 //uri지정 - 외부에서 서블릿 위치 찾기 가능
-@WebServlet("/TEST_01") //엔드포인트 지정
+@WebServlet("/TEST_01") //엔드포인트 지정(@WebServlet Annotate를 통해서)
 				 //도메인 경로 - http://localhost:8090/02_SERVLET_INIT/ - 현재위치
 				 //전체 도메인 경로 http://localhost:8090/02_SERVLET_INIT/TEST_01
 
