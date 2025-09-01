@@ -4,7 +4,8 @@
 
 
 <!-- 선언문 -->
-<%@ page import="moduleTest.*" %>
+<%@ page import="moduleTestjava.DbUtils" %>
+<%@ page import="moduleTestjava.MemberDto" %>
 
 <%
 	/* 문자셋 설정 */
@@ -18,10 +19,10 @@
 		
 		
 		//각 항목 not null (message : '-' 를 입력하세요)
-		if(dto.getUserid().isEmpty()){		
-			System.out.println("Userid 를 입력하세요.");
+		if(dto.getUserid()==""){		
 			return false;
 		}
+		
 		//userid 길이 5자 이하(message : Userid는 5자 이상 입력하셔야 합니다.)
 		if(dto.getUserid().length()<=5){		
 			System.out.println("Userid는 5자 이상 입력하셔야 합니다.");
@@ -32,9 +33,14 @@
 	}	
 %>    
 
+<%
+	/* 문자셋 설정 */
+	request.setCharacterEncoding("UTF-8");
+	response.setContentType("text/html; charset=UTF-8");
+%>
 
 <!--  01 파라미터 받기 -->
-<jsp:useBean id="dto" class="moduleTest.MemberDto" scope="request" />
+<jsp:useBean id="dto" class="moduleTestjava.MemberDto" scope="request" />
 <jsp:setProperty name="dto" property="*" />
 
 <%
@@ -87,6 +93,7 @@
 	catch(Exception e){
 		System.out.println("문제 발생 ROLLBACK");
 		DbUtils.RollBack();
+		e.printStackTrace();
 	}
 		
 %>

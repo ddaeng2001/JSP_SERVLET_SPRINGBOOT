@@ -3,17 +3,17 @@ package Ch02;
 public class UserDto {
 	private String userid;
 	private String password;
-	private int rePassword;
+	private String rePassword;
 	private String username;
 	private String zipcode;
 	private String addr1;
 	private String addr2;
-	private int phone1;
-	private int phone2;
-	private int phone3;
-	private int tel1;
-	private int tel2;
-	private int tel3;
+	private String phone1;
+	private String phone2;
+	private String phone3;
+	private String tel1;
+	private String tel2;
+	private String tel3;
 	private String email;
 	private String year;
 	private String month;
@@ -23,8 +23,8 @@ public class UserDto {
 	public UserDto(){} //public을 지정해야 action사용가능
 
 	//모든 인자 생성자
-	public UserDto(String userid, String password, int rePassword, String username, String zipcode, String addr1,
-			String addr2, int phone1, int phone2, int phone3, int tel1, int tel2, int tel3, String email, String year,
+	public UserDto(String userid, String password, String rePassword, String username, String zipcode, String addr1,
+			String addr2, String phone1, String phone2, String phone3, String tel1, String tel2, String tel3, String email, String year,
 			String month, String day) {
 		super();
 		this.userid = userid;
@@ -64,11 +64,11 @@ public class UserDto {
 		this.password = password;
 	}
 
-	public int getRePassword() {
+	public String getRePassword() {
 		return rePassword;
 	}
 
-	public void setRePassword(int rePassword) {
+	public void setRePassword(String rePassword) {
 		this.rePassword = rePassword;
 	}
 
@@ -104,51 +104,51 @@ public class UserDto {
 		this.addr2 = addr2;
 	}
 
-	public int getPhone1() {
+	public String getPhone1() {
 		return phone1;
 	}
 
-	public void setPhone1(int phone1) {
+	public void setPhone1(String phone1) {
 		this.phone1 = phone1;
 	}
 
-	public int getPhone2() {
+	public String getPhone2() {
 		return phone2;
 	}
 
-	public void setPhone2(int phone2) {
+	public void setPhone2(String phone2) {
 		this.phone2 = phone2;
 	}
 
-	public int getPhone3() {
+	public String getPhone3() {
 		return phone3;
 	}
 
-	public void setPhone3(int phone3) {
+	public void setPhone3(String phone3) {
 		this.phone3 = phone3;
 	}
 
-	public int getTel1() {
+	public String getTel1() {
 		return tel1;
 	}
 
-	public void setTel1(int tel1) {
+	public void setTel1(String tel1) {
 		this.tel1 = tel1;
 	}
 
-	public int getTel2() {
+	public String getTel2() {
 		return tel2;
 	}
 
-	public void setTel2(int tel2) {
+	public void setTel2(String tel2) {
 		this.tel2 = tel2;
 	}
 
-	public int getTel3() {
+	public String getTel3() {
 		return tel3;
 	}
 
-	public void setTel3(int tel3) {
+	public void setTel3(String tel3) {
 		this.tel3 = tel3;
 	}
 

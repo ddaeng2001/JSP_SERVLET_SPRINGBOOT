@@ -1,4 +1,4 @@
-package moduleTest;
+package moduleTestjava;
 
 
 public class MemberDto {
@@ -188,7 +188,7 @@ public class MemberDto {
 
 	@Override
 	public String toString() {
-		return "UserDto [userid=" + userid + ", password=" + password + ", rePassword=" + rePassword + ", username="
+		return "MemberDto [userid=" + userid + ", password=" + password + ", rePassword=" + rePassword + ", username="
 				+ username + ", zipcode=" + zipcode + ", addr1=" + addr1 + ", addr2=" + addr2 + ", phone1=" + phone1
 				+ ", phone2=" + phone2 + ", phone3=" + phone3 + ", tel1=" + tel1 + ", tel2=" + tel2 + ", tel3=" + tel3
 				+ ", email=" + email + ", year=" + year + ", month=" + month + ", day=" + day + "]";
